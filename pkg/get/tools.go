@@ -383,7 +383,7 @@ https://github.com/inlets/inletsctl/releases/download/{{.Version}}/{{$fileName}}
 			Owner:   "derailed",
 			Repo:    "k9s",
 			Name:    "k9s",
-			Version: "v0.24.2",
+			Version: "v0.24.7",
 			URLTemplate: `
 		{{$osStr := ""}}
 		{{ if HasPrefix .OS "ming" -}}
