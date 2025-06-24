@@ -3262,56 +3262,6 @@ https://github.com/{{.Owner}}/{{.Repo}}/releases/download/{{.Version}}/{{.Name}}
 
 	tools = append(tools,
 		Tool{
-			Owner:       "grafana",
-			Repo:        "agent",
-			Name:        "grafana-agent",
-			Description: "Grafana Agent is a telemetry collector for sending metrics, logs, and trace data to the opinionated Grafana observability stack.",
-			URLTemplate: `
-						{{$os := .OS}}
-						{{$arch := .Arch}}
-						{{$ext := ".zip"}}
-
-						{{- if or (eq .Arch "aarch64") (eq .Arch "arm64") -}}
-						{{$arch = "arm64"}}
-						{{- else if eq .Arch "x86_64" -}}
-						{{ $arch = "amd64" }}
-						{{- else if eq .Arch "armv6l" -}}
-						{{ $arch = "armv6" }}
-						{{- else if eq .Arch "armv7l" -}}
-						{{ $arch = "armv7" }}
-						{{- end -}}
-
-						{{ if HasPrefix .OS "ming" -}}
-						{{$os = "windows"}}
-						{{$ext = ".exe.zip"}}
-						{{- end -}}
-						https://github.com/{{.Owner}}/{{.Repo}}/releases/download/{{.Version}}/grafana-agent-{{$os}}-{{$arch}}{{$ext}}
-						`,
-			BinaryTemplate: `
-						{{$os := .OS}}
-						{{$arch := .Arch}}
-						{{$ext := ""}}
-
-						{{- if or (eq .Arch "aarch64") (eq .Arch "arm64") -}}
-						{{$arch = "arm64"}}
-						{{- else if eq .Arch "x86_64" -}}
-						{{ $arch = "amd64" }}
-						{{- else if eq .Arch "armv6l" -}}
-						{{ $arch = "armv6" }}
-						{{- else if eq .Arch "armv7l" -}}
-						{{ $arch = "armv7" }}
-						{{- end -}}
-
-						{{ if HasPrefix .OS "ming" -}}
-						{{$os = "windows"}}
-						{{$ext = ".exe"}}
-						{{- end -}}
-						grafana-agent-{{$os}}-{{$arch}}{{$ext}}
-						`,
-		})
-
-	tools = append(tools,
-		Tool{
 			Owner:       "scaleway",
 			Repo:        "scaleway-cli",
 			Name:        "scaleway-cli",

@@ -811,7 +811,6 @@ There are 52 apps that you can install on your cluster.
 | [gomplate](https://github.com/hairyhenderson/gomplate)                       | A flexible commandline tool for template rendering. Supports lots of local and remote datasources.                                                                |
 | [goreleaser](https://github.com/goreleaser/goreleaser)                       | Deliver Go binaries as fast and easily as possible                                                                                                                |
 | [gptscript](https://github.com/gptscript-ai/gptscript)                       | Natural Language Programming                                                                                                                                      |
-| [grafana-agent](https://github.com/grafana/agent)                            | Grafana Agent is a telemetry collector for sending metrics, logs, and trace data to the opinionated Grafana observability stack.                                  |
 | [grype](https://github.com/anchore/grype)                                    | A vulnerability scanner for container images and filesystems                                                                                                      |
 | [hadolint](https://github.com/hadolint/hadolint)                             | A smarter Dockerfile linter that helps you build best practice Docker images                                                                                      |
 | [helm](https://github.com/helm/helm)                                         | The Kubernetes Package Manager: Think of it like apt/yum/homebrew for Kubernetes.                                                                                 |
@@ -926,5 +925,5 @@ There are 52 apps that you can install on your cluster.
 | [waypoint](https://github.com/hashicorp/waypoint)                            | Easy application deployment for Kubernetes and Amazon ECS                                                                                                         |
 | [yq](https://github.com/mikefarah/yq)                                        | Portable command-line YAML processor.                                                                                                                             |
 | [yt-dlp](https://github.com/yt-dlp/yt-dlp)                                   | Fork of youtube-dl with additional features and fixes                                                                                                             |
-There are 167 tools, use `arkade get NAME` to download one.
+There are 166 tools, use `arkade get NAME` to download one.
 > Note to contributors, run `go build && ./arkade get --format markdown` to generate this list
