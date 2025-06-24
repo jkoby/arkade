@@ -4671,6 +4671,7 @@ https://github.com/grafana/alloy/releases/download/{{.Version}}/{{$fileName}}`,
 						{{- end -}}
 						logcli-{{$os}}-{{$arch}}{{$ext}}
 						`,
+			NoExtension: true,
 		})
 	return tools
 }
