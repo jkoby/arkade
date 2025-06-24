@@ -866,6 +866,7 @@ There are 52 apps that you can install on your cluster.
 | [lazydocker](https://github.com/jesseduffield/lazydocker)                    | A simple terminal UI for both docker and docker-compose, written in Go with the gocui library.                                                                    |
 | [lazygit](https://github.com/jesseduffield/lazygit)                          | A simple terminal UI for git commands.                                                                                                                            |
 | [linkerd2](https://github.com/linkerd/linkerd2)                              | Ultralight, security-first service mesh for Kubernetes.                                                                                                           |
+| [logcli](https://github.com/grafana/loki)                                    | Query and explore logs in Grafana Loki.                                                                                                                           |
 | [mc](https://github.com/minio/mc)                                            | MinIO Client is a replacement for ls, cp, mkdir, diff and rsync commands for filesystems and object storage.                                                      |
 | [metal](https://github.com/equinix/metal-cli)                                | Official Equinix Metal CLI                                                                                                                                        |
 | [minikube](https://github.com/kubernetes/minikube)                           | Runs the latest stable release of Kubernetes, with support for standard Kubernetes features.                                                                      |
@@ -926,5 +927,5 @@ There are 52 apps that you can install on your cluster.
 | [waypoint](https://github.com/hashicorp/waypoint)                            | Easy application deployment for Kubernetes and Amazon ECS                                                                                                         |
 | [yq](https://github.com/mikefarah/yq)                                        | Portable command-line YAML processor.                                                                                                                             |
 | [yt-dlp](https://github.com/yt-dlp/yt-dlp)                                   | Fork of youtube-dl with additional features and fixes                                                                                                             |
-There are 167 tools, use `arkade get NAME` to download one.
+There are 168 tools, use `arkade get NAME` to download one.
 > Note to contributors, run `go build && ./arkade get --format markdown` to generate this list
